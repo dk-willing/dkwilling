@@ -242,6 +242,15 @@ a.active {
 .about__content span {
   font-weight: 600;
 }
+.skills__header {
+  margin-bottom: 4rem;
+}
+.skills__header span {
+  color: var(--primary-color);
+}
+.skills__header h3 {
+  font-size: 1.6rem;
+}
 /* Theme */
 .theme-btn {
   position: fixed;
@@ -281,9 +290,48 @@ a.active {
   align-items: center;
   justify-content: center;
   padding: 10px 20px; /* space inside slides */
-  background: #f5f5f5; /* just for visibility */
   border-radius: 6px;
 }
 .swiper-wrapper {
   transition-timing-function: linear !important; /* makes it constant speed */
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.html {
+  color: #0462b5;
+}
+.css {
+  color: #9eb904;
+}
+.js {
+  color: #f25151;
+}
+.tailwindcss {
+  color: #5353ed;
+}
+.tailwind-css {
+  stroke: #0462b5;
+}
+.bootstrap {
+  color: #ed539c;
+}
+.py {
+  color: #5364ed;
+}
+.git {
+  color: #fb5a10;
+}
+.figma {
+  color: #fb1042;
+}
+.react {
+  color: #6369ff;
+}
+.chrome {
+  color: #fff063;
 }

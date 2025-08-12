@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +28,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Box Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <!-- Swipper Js -->
     <link
@@ -114,21 +126,94 @@
             chance to learn, experiment, and create something meaningful.
           </p>
         </div>
+        <div class="skills__header">
+          <h3>MY <span>SKILLS</span></h3>
+          <p>I have fair knowledge in</p>
+        </div>
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <div class="swiper-slide">HTML</div>
-            <div class="swiper-slide">CSS</div>
-            <div class="swiper-slide">JavaScript</div>
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide html">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="swiper-slide css">
+              <i class="fa-brands fa-css3-alt"></i>
+              CSS
+            </div>
+            <div class="swiper-slide js">
+              <i class="fa-brands fa-js"></i>JavaScript
+            </div>
+            <div class="swiper-slide tailwindcss">
+              <box-icon
+                name="tailwind-css"
+                type="logo"
+                flip="horizontal"
+                animation="spin"
+                color="#5353ed"
+              ></box-icon
+              >TailwindCSS
+            </div>
+            <div class="swiper-slide bootstrap">
+              <box-icon
+                name="bootstrap"
+                type="logo"
+                animation="burst"
+                flip="horizontal"
+                color="#ed539c"
+              ></box-icon
+              >BOOTSTRAP
+            </div>
+            <div class="swiper-slide py">
+              <box-icon
+                name="python"
+                type="logo"
+                animation="fade-left"
+                flip="horizontal"
+                color="#5364ed"
+              ></box-icon>
+              PYTHON
+            </div>
+            <div class="swiper-slide git">
+              <box-icon
+                name="github"
+                type="logo"
+                flip="horizontal"
+                animation="fade-right"
+                color="#fb5a10"
+              ></box-icon
+              >GIT & GITHUB
+            </div>
+            <div class="swiper-slide figma">
+              <box-icon
+                name="figma"
+                type="logo"
+                animation="tada"
+                flip="horizontal"
+                color="#fb1042"
+              ></box-icon
+              >FIGMA
+            </div>
+            <div class="swiper-slide react">
+              <box-icon
+                name="react"
+                type="logo"
+                flip="horizontal"
+                animation="spin"
+                color="#6369ff"
+              ></box-icon
+              >REACT
+            </div>
+            <div class="swiper-slide chrome">
+              <box-icon
+                name="chrome"
+                type="logo"
+                flip="horizontal"
+                animation="spin"
+                color="#fff063"
+              ></box-icon
+              >DEVTOOLS
+            </div>
           </div>
         </div>
       </section>

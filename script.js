@@ -26,6 +26,7 @@ const swiper = new Swiper(".swiper", {
   autoplay: {
     delay: 0, // no pause between transitions
     disableOnInteraction: false,
+    pauseOnMouseEnter: false,
   },
   slidesPerView: "auto", // each slide takes its natural width
   spaceBetween: 30, // adjust spacing between logos
