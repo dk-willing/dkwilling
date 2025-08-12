@@ -20,6 +20,17 @@
       rel="stylesheet"
     />
 
+    <!-- Swipper Js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="app.css" />
 
@@ -35,7 +46,9 @@
       <nav class="navbar">
         <div class="navbar__left-side">
           <ul>
-            <li class="navbar-item active"><a href="#">Home</a></li>
+            <li class="navbar-item">
+              <a href="#hero" class="active">Home</a>
+            </li>
             <li class="navbar-item"><a href="#about-me">About</a></li>
             <li class="navbar-item"><a href="#">Services</a></li>
           </ul>
@@ -56,7 +69,7 @@
     </div>
 
     <!-- Main -->
-    <div class="container">
+    <div class="container" id="hero">
       <div class="hero">
         <div class="p__greet-box">
           <p class="p__greet">Hello!</p>
@@ -73,8 +86,51 @@
       </div>
 
       <section id="about-me" class="about-me">
-        <h2>About ME</h2>
-        <p>Little Brief About Myself</p>
+        <div class="about__header">
+          <h2>ABOUT <span>ME</span></h2>
+          <p>Little Brief About Myself</p>
+        </div>
+        <div class="about__content">
+          <p>
+            Hi, I’m <span>David Karikari</span> — a curious mind and a
+            passionate developer on a journey to craft clean, intuitive, and
+            impactful digital experiences. I’m currently focused on
+            <span>frontend development</span>, but I have a growing interest in
+            exploring the <span>full stack</span> — blending design,
+            functionality, and performance to create apps people actually enjoy
+            using. Beyond code, I’m deeply driven by the desire to keep learning
+            and improving — whether it’s mastering a new JavaScript framework,
+            diving into <span>UI/UX</span> best practices, or experimenting with
+            backend tools that make apps faster and smarter. <br />
+            <br />
+            My aspiration is to become a well-rounded engineer who can take an
+            idea from concept to deployment, building products that solve real
+            problems. When I’m not writing code, you might find me catching up
+            on tech trends, jamming to Afrobeats, exploring Ghana’s vibrant
+            entertainment scene, or challenging myself with a good puzzle or
+            game that gets my brain ticking. I also enjoy reading — from tech
+            blogs to books that sharpen my thinking and broaden my perspective.
+            For me, coding isn’t just a skill — it’s a craft. Every project is a
+            chance to learn, experiment, and create something meaningful.
+          </p>
+        </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">HTML</div>
+            <div class="swiper-slide">CSS</div>
+            <div class="swiper-slide">JavaScript</div>
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+        </div>
       </section>
     </div>
 

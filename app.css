@@ -26,6 +26,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,6 +34,8 @@ body {
   padding: 1.5rem 8rem;
   transition: all 0.2s;
   position: relative;
+  line-height: 1.7;
+  color: #1a1a1a;
 }
 
 a {
@@ -96,8 +99,12 @@ body::before {
 }
 .navbar__left-side ul li,
 .navbar__right-side ul li {
-  padding: 1rem 4rem;
   cursor: pointer;
+}
+.navbar__left-side ul li a,
+.navbar__right-side ul li a {
+  display: inline-block;
+  padding: 1rem 4rem;
 }
 .my-logo {
   width: 20rem;
@@ -107,7 +114,7 @@ body::before {
   background-color: var(--primary-color-light);
   border-radius: 50rem;
 }
-.navbar-item.active {
+a.active {
   background: var(--primary-color);
   border-radius: 50rem;
   font-weight: 500;
@@ -169,7 +176,7 @@ body::before {
   color: var(--primary-color);
 }
 .hire-me {
-  margin-top: 16rem;
+  margin-top: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,16 +217,30 @@ body::before {
 /* About me */
 .about-me {
   padding: 9.6rem 0;
+}
+.about__header {
   padding-bottom: 2.8rem;
   border-bottom: 2px solid var(--primary-color-light);
+}
+.about__header span {
+  color: var(--primary-color);
 }
 .about-me h2 {
   font-size: 5rem;
   font-weight: 500;
 }
 .about-me p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--primary-color-light);
+}
+.about__content {
+  padding: 2.8rem 0;
+}
+.about__content p {
+  font-size: 1.4rem;
+}
+.about__content span {
+  font-weight: 600;
 }
 /* Theme */
 .theme-btn {
@@ -232,4 +253,37 @@ body::before {
   width: 2.4rem;
   height: 2.4rem;
   cursor: pointer;
+}
+/* Swiper JS */
+.swiper {
+  width: 100%;
+  height: 40px;
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 85%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
+
+  mask-position: center;
+}
+.swiper-slide {
+  width: 200px !important; /* allows multiple slides on screen */
+  flex-shrink: 0; /* prevent shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px; /* space inside slides */
+  background: #f5f5f5; /* just for visibility */
+  border-radius: 6px;
+}
+.swiper-wrapper {
+  transition-timing-function: linear !important; /* makes it constant speed */
 }

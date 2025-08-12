@@ -1,4 +1,4 @@
-const navbarItems = document.querySelectorAll(".navbar-item");
+const navbarItems = document.querySelectorAll(".navbar-item a");
 const themeBtn = document.querySelector(".theme-btn");
 
 function removeClassList(item) {
@@ -16,4 +16,26 @@ navbarItems.forEach((item) => {
 
 themeBtn.addEventListener("click", () => {
   document.querySelector("html").classList.toggle("dark");
+});
+
+// Swiper JS
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  speed: 5000, // bigger = slower, smoother scroll
+  autoplay: {
+    delay: 0, // no pause between transitions
+    disableOnInteraction: false,
+  },
+  slidesPerView: "auto", // each slide takes its natural width
+  spaceBetween: 30, // adjust spacing between logos
+  freeMode: {
+    enabled: true,
+    momentum: false,
+  },
+
+  // Optional: remove pagination/navigation if not needed
+  pagination: false,
+  navigation: false,
+  scrollbar: false,
 });
