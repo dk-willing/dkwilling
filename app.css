@@ -11,6 +11,7 @@
   --black: #171717;
   --glass: #d0d5dd75;
   --glass-dark: #d0d5dd;
+  --glass-dark-light: #ebebecdd;
 
   --theme-color: #fff;
 
@@ -78,7 +79,7 @@ body::before {
   z-index: 100;
 }
 .navbar {
-  max-width: 100rem;
+  max-width: 103rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -334,4 +335,123 @@ a.active {
 }
 .chrome {
   color: #fff063;
+}
+
+/* PROJECTS */
+.timeline {
+  position: relative;
+  margin: 20px auto;
+  max-width: 100rem;
+}
+
+.timeline::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  background: var(--glass);
+}
+.my-projects {
+  position: relative;
+  padding: 2rem 4rem;
+  width: 50%;
+}
+.left-container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  right: -13%;
+  top: 2%;
+  position: absolute;
+  z-index: 10;
+}
+
+.right-container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  left: -14%;
+  top: 2%;
+  position: absolute;
+  z-index: 10;
+}
+
+.project-text-box {
+  position: relative;
+  background: var(--glass-dark-light);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+}
+
+.project-text-box h2 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+}
+
+.project-text-box small {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--primary-color-light);
+}
+.left-container {
+  left: 0;
+}
+.right-container {
+  left: 50%;
+}
+.left-container-arrow {
+  position: absolute;
+  top: 5px;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border-bottom: 14px solid transparent;
+  border-top: 14px solid transparent;
+  border-left: 14px solid var(--glass-dark-light);
+}
+.left-container-arrow {
+  position: absolute;
+  top: 5px;
+  right: -9px;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid var(--glass-dark-light);
+}
+.right-container-arrow {
+  position: absolute;
+  top: 4px;
+  left: -9px;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid var(--glass-dark-light);
+}
+.project-links {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-align: right;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.project-links a {
+  color: #232323;
+}
+
+.project-links i {
+  font-size: 1.8rem;
+}
+.project-links a:nth-child(1) i {
+  color: #fb1042;
 }

@@ -1,6 +1,28 @@
 const navbarItems = document.querySelectorAll(".navbar-item a");
 const themeBtn = document.querySelector(".theme-btn");
 
+const myProjectContainer = document.querySelectorAll(".my-projects");
+const myProjectTextBox = document.querySelectorAll(".project-text-box");
+
+myProjectContainer.forEach((el, idx) => {
+  if (idx % 2 === 0) {
+    el.classList.add("left-container");
+  } else {
+    el.classList.add("right-container");
+  }
+});
+
+myProjectTextBox.forEach((el, idx) => {
+  const span = document.createElement("span");
+  el.appendChild(span);
+
+  if (idx % 2 === 0) {
+    span.classList.add("left-container-arrow");
+  } else {
+    span.classList.add("right-container-arrow");
+  }
+});
+
 function removeClassList(item) {
   item.forEach((i) => {
     i.classList.remove("active");
