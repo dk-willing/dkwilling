@@ -124,7 +124,9 @@ a.active {
 /* HERO */
 .hero {
   padding: 3rem;
+  padding-bottom: 7rem;
   padding-top: 10rem;
+  height: 100vh;
 }
 .p__greet {
   font-size: 1.4rem;
@@ -218,6 +220,8 @@ a.active {
 /* About me */
 .about-me {
   padding: 9.6rem 0;
+  padding-top: 2rem;
+  min-height: 100vh;
 }
 .about__header {
   padding-bottom: 2.8rem;
