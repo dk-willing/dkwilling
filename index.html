@@ -46,6 +46,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="app.css" />
 
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="queries.css" />
+
     <!-- SCRIPT -->
     <script src="script.js" defer></script>
   </head>
@@ -78,6 +81,66 @@
           </ul>
         </div>
       </nav>
+
+      <nav class="mobile-nav">
+        <div class="mobile-nav-logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="My  Logo" class="my-logo" />
+          </a>
+        </div>
+
+        <div class="icons">
+          <button>
+            <box-icon name="customize" class="icon mobile-menu"></box-icon>
+          </button>
+        </div>
+      </nav>
+      <menu class="mobile-nav-items-menu">
+        <div class="mobile-nav-items">
+          <li class="mobile-nav-item">
+            <a href="#hero" class="active"
+              ><box-icon name="home" class="mobile-nav-items-icon"></box-icon
+            ></a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#about-me"
+              ><box-icon name="user" class="mobile-nav-items-icon"></box-icon
+            ></a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#services"
+              ><box-icon
+                name="briefcase-alt-2"
+                class="mobile-nav-items-icon"
+              ></box-icon
+            ></a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#resume"
+              ><box-icon
+                name="book-reader"
+                class="mobile-nav-items-icon"
+              ></box-icon
+            ></a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#projects"
+              ><box-icon
+                name="code-alt"
+                class="mobile-nav-items-icon"
+              ></box-icon
+            ></a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#contact"
+              ><box-icon
+                name="envelope"
+                class="mobile-nav-items-icon"
+              ></box-icon
+            ></a>
+          </li>
+        </div>
+      </menu>
     </div>
 
     <!-- Main -->
@@ -91,9 +154,21 @@
 
         <div class="hire-me">
           <span class="hire__btn">
-            <a href="#">Reach Me</a>
+            <a href="#">Resume</a>
             <a href="#">Hire Me</a>
           </span>
+        </div>
+
+        <div>
+          <a href="#about-me" class="scroll-down">
+            <div class="mouse">
+              <box-icon name="mouse"></box-icon>
+            </div>
+            <p>Scroll Down</p>
+            <div class="down-arrow">
+              <box-icon name="down-arrow-alt"></box-icon>
+            </div>
+          </a>
         </div>
       </section>
 
@@ -173,7 +248,7 @@
               >REACT
             </div>
             <div class="swiper-slide chrome">
-              <box-icon name="chrome" type="logo" color="#fff063"></box-icon
+              <box-icon name="chrome" type="logo" color="#8f8104"></box-icon
               >DEVTOOLS
             </div>
           </div>
@@ -257,22 +332,6 @@
       </section>
     </div>
 
-    <!-- Theme -->
-    <div class="theme-btn">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-        />
-      </svg>
-    </div>
+    <!-- miscelleneous -->
   </body>
 </html>

@@ -89,6 +89,11 @@ body::before {
   border-radius: 50rem;
 }
 
+.mobile-nav,
+.mobile-nav-items-menu {
+  display: none;
+}
+
 .navbar__left-side ul,
 .navbar__right-side ul {
   display: flex;
@@ -115,7 +120,7 @@ body::before {
   background-color: var(--primary-color-light);
   border-radius: 50rem;
 }
-a.active {
+.navbar-item a.active {
   background: var(--primary-color);
   border-radius: 50rem;
   font-weight: 500;
@@ -217,6 +222,27 @@ a.active {
   background-color: var(--black);
 }
 
+.scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
+  animation: upanddown 1.2s linear alternate infinite;
+}
+
+@keyframes upanddown {
+  0% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(6px);
+  }
+}
+
+.scroll-down p {
+  color: var(--black);
+}
+
 /* About me */
 .about-me {
   padding: 9.6rem 0;
@@ -256,18 +282,7 @@ a.active {
 .skills__header h3 {
   font-size: 1.6rem;
 }
-/* Theme */
-.theme-btn {
-  position: fixed;
-  background-color: var(--black);
-  padding: 2rem;
-  border-radius: 50%;
-  bottom: 2rem;
-  right: 2rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  cursor: pointer;
-}
+
 /* Swiper JS */
 .swiper {
   width: 100%;
@@ -338,7 +353,7 @@ a.active {
   color: #6369ff;
 }
 .chrome {
-  color: #fff063;
+  color: #8f8104;
 }
 
 /* PROJECTS */

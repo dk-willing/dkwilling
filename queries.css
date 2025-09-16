@@ -1,0 +1,131 @@
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+    padding: 1rem 3rem;
+  }
+
+  .main__nav {
+    top: 87%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile-nav-items-menu {
+    display: block;
+  }
+
+  .mobile-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    padding: 1rem 1rem;
+    border-radius: 50rem;
+    position: relative;
+
+    z-index: 5;
+  }
+
+  .mobile-nav .icon,
+  .mobile-nav-items-icon {
+    width: 2rem;
+    font-size: 3rem;
+    fill: var(--white);
+  }
+
+  .icons {
+    margin-right: 2rem;
+  }
+  .icons button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .my-logo {
+    width: 15rem;
+    height: 4rem;
+  }
+
+  .mobile-nav-items {
+    margin: 0 auto;
+    position: absolute;
+    width: 94.7%;
+    background-color: var(--black);
+    font-size: 1.4rem;
+    top: 50%;
+    height: 0;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+    visibility: hidden;
+  }
+
+  .mobile-nav-items.open {
+    visibility: visible;
+    top: -50%;
+    height: 8rem;
+    padding: 2rem 3rem;
+  }
+
+  .mobile-nav-item a.active .mobile-nav-items-icon {
+    fill: var(--primary-color);
+  }
+
+  .mobile-nav-items-icon:hover {
+    fill: var(--primary-color);
+  }
+  .hero {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .scroll-down {
+    margin-top: 13rem;
+  }
+
+  .h__greet,
+  .h__greet-2 {
+    font-size: 3.5rem;
+  }
+
+  /* ABOUT ME */
+  .about-me h2 {
+    font-size: 2.8rem;
+  }
+
+  /* Project */
+  .timeline::after {
+    left: 0;
+  }
+
+  .left-container {
+    width: 100%;
+  }
+  .right-container {
+    left: 0;
+    width: 100%;
+  }
+
+  .right-container img,
+  .left-container img {
+    left: -24%;
+  }
+
+  .left-container-arrow {
+    border-right: 10px solid var(--glass-dark-light);
+    border-left: 10px transparent;
+    left: -9px;
+  }
+}
