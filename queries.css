@@ -24,7 +24,8 @@
     justify-content: space-between;
     background: var(--black);
     padding: 1rem 1rem;
-    border-radius: 50rem;
+    border-radius: 1rem;
+    padding: 2rem;
     position: relative;
 
     z-index: 5;
@@ -32,8 +33,6 @@
 
   .mobile-nav .icon,
   .mobile-nav-items-icon {
-    width: 2rem;
-    font-size: 3rem;
     fill: var(--white);
   }
 
@@ -55,24 +54,28 @@
   .mobile-nav-items {
     margin: 0 auto;
     position: absolute;
-    width: 94.7%;
+    width: 95%;
     background-color: var(--black);
     font-size: 1.4rem;
-    top: 50%;
+    top: 0;
     height: 0;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
     transition: all 0.2s linear;
     visibility: hidden;
+    padding: 2rem 3rem 5rem 3rem;
   }
 
   .mobile-nav-items.open {
     visibility: visible;
-    top: -50%;
-    height: 8rem;
-    padding: 2rem 3rem;
+    top: -150%;
+    height: 21rem;
+    padding: 2rem 3rem 5rem 3rem;
   }
 
   .mobile-nav-item a.active .mobile-nav-items-icon {
@@ -92,7 +95,7 @@
   }
 
   .scroll-down {
-    margin-top: 13rem;
+    margin-top: 8rem;
   }
 
   .h__greet,
