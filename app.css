@@ -716,6 +716,7 @@ form {
   padding: 1rem;
   width: 100%;
   font-family: inherit;
+  border-radius: 0;
 }
 
 .input__group textarea {
@@ -757,6 +758,7 @@ form {
   border: none;
   background-color: transparent;
   border: 1px solid var(--primary-color);
+  color: var(--black);
   position: relative;
   overflow: hidden;
   display: flex;
