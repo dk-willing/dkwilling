@@ -1,23 +1,24 @@
-const myProjectContainer = document.querySelectorAll(".my-projects");
-const myProjectTextBox = document.querySelectorAll(".project-text-box");
+// const myProjectContainer = document.querySelectorAll(".my-projects");
+// const myProjectTextBox = document.querySelectorAll(".project-text-box");
 const navLinks = document.querySelectorAll(".navbar a");
 const sections = document.querySelectorAll("section[id]");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuItems = document.querySelector(".mobile-nav-items");
 const allMobileNavItems = document.querySelectorAll(".mobile-nav-item");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-item a");
+const getServices = document.querySelectorAll(".service--1");
 
-myProjectContainer.forEach((el, idx) => {
-  el.classList.add(idx % 2 === 0 ? "left-container" : "right-container");
-});
+// myProjectContainer.forEach((el, idx) => {
+//   el.classList.add(idx % 2 === 0 ? "left-container" : "right-container");
+// });
 
-myProjectTextBox.forEach((el, idx) => {
-  const span = document.createElement("span");
-  span.classList.add(
-    idx % 2 === 0 ? "left-container-arrow" : "right-container-arrow"
-  );
-  el.appendChild(span);
-});
+// myProjectTextBox.forEach((el, idx) => {
+//   const span = document.createElement("span");
+//   span.classList.add(
+//     idx % 2 === 0 ? "left-container-arrow" : "right-container-arrow"
+//   );
+//   el.appendChild(span);
+// });
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
@@ -99,7 +100,7 @@ const observer2 = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.3,
+    threshold: 0.6,
   }
 );
 
@@ -109,4 +110,18 @@ sections.forEach((item) => {
 
 mobileMenu.addEventListener("click", () => {
   mobileMenuItems.classList.toggle("open");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide("#project-carousel", {
+    type: "fade",
+    rewind: true,
+    autoplay: true,
+    interval: 10000, // 3 seconds
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnClick: true,
+    speed: 1000,
+  });
+  splide.mount();
 });

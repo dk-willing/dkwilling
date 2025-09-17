@@ -29,6 +29,12 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+
     <!-- Box Icons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
@@ -255,83 +261,144 @@
         </div>
       </section>
 
+      <section id="services" class="about-me">
+        <div class="about__header">
+          <h2>MY <span>SERVICES</span></h2>
+          <p>What I can do for you</p>
+        </div>
+
+        <div class="services">
+          <!-- Service 1 -->
+          <div class="service--1">
+            <p>01</p>
+            <div class="service-content">
+              <div class="service-content-header">
+                <h3 class="service-content-title">Product Design</h3>
+                <p class="service-content-subtitle">
+                  UI/UX Design &#9679; Prototyping & Wireframing &#9679;
+                  Usability Testing
+                </p>
+              </div>
+              <div class="content-description">
+                <p>
+                  I achieve effective product design by combining creativity
+                  with user-centered thinking. I research user needs, translate
+                  insights into wireframes, and design intuitive, visually
+                  appealing interfaces that provide seamless user experiences.
+                </p>
+                <a href="#" class="service-reach">Let’s Work</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service--1">
+            <p>02</p>
+            <div class="service-content">
+              <div class="service-content-header">
+                <h3 class="service-content-title">Frontend Development</h3>
+                <p class="service-content-subtitle">
+                  ReactJS &#9679; NextJS &#9679; Modern Libraries
+                </p>
+              </div>
+              <div class="content-description">
+                <p>
+                  I craft responsive, accessible, and visually engaging user
+                  interfaces. Using React, Next.js, and modern CSS frameworks, I
+                  bring designs to life with smooth interactions and
+                  pixel-perfect layouts.
+                </p>
+                <a href="#" class="service-reach">Let’s Work</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service--1">
+            <p>03</p>
+            <div class="service-content">
+              <div class="service-content-header">
+                <h3 class="service-content-title">Backend Development</h3>
+                <p class="service-content-subtitle">
+                  NodeJS &#9679; ExpressJS &#9679; Databases
+                </p>
+              </div>
+              <div class="content-description">
+                <p>
+                  I build scalable, secure backends and REST APIs using Node.js,
+                  Express, and databases like MongoDB and PostgreSQL. I ensure
+                  reliability and performance for real-world applications.
+                </p>
+                <a href="#" class="service-reach">Let’s Work</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="projects" class="about-me">
         <div class="about__header">
           <h2>MY <span>PROJECTS</span></h2>
           <p>What I have been working on</p>
         </div>
 
-        <div class="timeline">
-          <!--  -->
-          <div class="my-projects">
-            <div class="project-text-box">
-              <img src="images/project-1.jpg" alt="OmniFood Banner" />
-              <h2>OmniFood</h2>
-              <small>April 2024 - May 2024</small>
-              <p>This project thought me more about flexbox and grid layout</p>
+        <div id="project-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide project__card">
+                <img src="images/project-1.jpg" alt="Omni Food" />
+                <div class="project__content">
+                  <h3>OmniFood</h3>
+                  <p>
+                    An AI-powered food delivery app that creates personalized
+                    diet plans and automates healthy meal orders.
+                  </p>
+                  <div class="project__links">
+                    <a href="#"
+                      ><box-icon name="github" type="logo"></box-icon
+                    ></a>
+                    <a href="#"><box-icon name="link-external"></box-icon></a>
+                  </div>
+                </div>
+              </li>
 
-              <div class="project-links">
-                <a
-                  href="https://github.com/dk-willing/ominifood.github.io.git"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a
-                  href="https://dk-willing.github.io/ominifood.github.io/"
-                  target="_blank"
-                  class="show-on-hover"
-                >
-                  <box-icon name="link-external"></box-icon>
-                </a>
-              </div>
-            </div>
-          </div>
+              <li class="splide__slide project__card">
+                <img src="images/project-2.jpg" alt="Portfolio Website" />
+                <div class="project__content">
+                  <h3>Portfolio</h3>
+                  <p>
+                    A minimalist personal portfolio showcasing skills, services,
+                    and projects with smooth animations.
+                  </p>
+                  <div class="project__links">
+                    <a href="#"
+                      ><box-icon name="github" type="logo"></box-icon
+                    ></a>
+                    <a href="#"><box-icon name="link-external"></box-icon></a>
+                  </div>
+                </div>
+              </li>
 
-          <!--  -->
-          <div class="my-projects">
-            <div class="project-text-box">
-              <img src="images/project-2.jpg" alt="OmniFood Banner" />
-              <h2>OmniFood</h2>
-              <small>April 2024 - May 2024</small>
-              <p>This project thought me more about flexbox and grid layout</p>
-
-              <div class="project-links">
-                <a href="www.github.com">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="www.github.com">
-                  <box-icon name="link-external"></box-icon>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-
-          <div class="my-projects">
-            <div class="project-text-box">
-              <img src="images/project-1.jpg" alt="OmniFood Banner" />
-              <h2>OmniFood</h2>
-              <small>April 2024 - May 2024</small>
-              <p>This project thought me more about flexbox and grid layout</p>
-
-              <div class="project-links">
-                <a href="www.github.com">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a
-                  href="dk-willing.github.io/ominifood.github.io/"
-                  target="_blank"
-                >
-                  <box-icon name="link-external"></box-icon>
-                </a>
-              </div>
-            </div>
+              <li class="splide__slide project__card">
+                <img src="images/project-1.jpg" alt="E-Commerce" />
+                <div class="project__content">
+                  <h3>E-Commerce</h3>
+                  <p>
+                    A responsive online shop with cart system, product filters,
+                    and seamless checkout flow.
+                  </p>
+                  <div class="project__links">
+                    <a href="#"
+                      ><box-icon name="github" type="logo"></box-icon
+                    ></a>
+                    <a href="#"><box-icon name="link-external"></box-icon></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </div>
-
-    <!-- miscelleneous -->
   </body>
 </html>
