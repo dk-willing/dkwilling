@@ -693,6 +693,7 @@ img {
 }
 
 form {
+  max-width: 100%;
   flex-basis: 50%;
 }
 
@@ -714,7 +715,7 @@ form {
   outline: none;
   border-bottom: 1px solid var(--glass-dark);
   padding: 1rem;
-  width: 100%;
+  max-width: 100%;
   font-family: inherit;
   border-radius: 0;
 }
