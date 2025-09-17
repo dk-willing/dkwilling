@@ -1,11 +1,11 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 40em) {
   body {
     overflow-x: hidden;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
   }
 
   .main__nav {
-    top: 87%;
+    top: 84%;
   }
 
   .navbar {
@@ -17,7 +17,7 @@
   }
 
   .mobile-nav {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -54,7 +54,9 @@
   .mobile-nav-items {
     margin: 0 auto;
     position: absolute;
-    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
     background-color: var(--black);
     font-size: 1.4rem;
     top: 0;
@@ -94,13 +96,17 @@
     height: 100vh;
   }
 
+  .hire-me {
+    margin-top: 3rem;
+  }
+
   .scroll-down {
-    margin-top: 2rem;
+    margin-top: 20rem;
   }
 
   .h__greet,
   .h__greet-2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   /* ABOUT ME */
@@ -149,5 +155,34 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .resume-card {
+    width: 100%;
+  }
+  .resume-timeline::after {
+    left: 0;
+    margin-left: 3rem;
+    top: 1rem;
+  }
+
+  .right-resume-circle,
+  .left-resume-circle {
+    left: -0.5rem;
+    top: 2.2rem;
+  }
+
+  .resume-right-card {
+    left: 0;
+  }
+
+  .resume-right-card,
+  .resume-left-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 18em) {
+  html {
+    font-size: 56.25%;
   }
 }

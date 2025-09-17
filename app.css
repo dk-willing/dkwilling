@@ -58,18 +58,7 @@ img {
   margin: 0 auto;
   position: relative;
 }
-body::before {
-  content: "";
-  background: url("/images/bg.svg");
-  position: absolute;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  opacity: 50%;
-}
+
 /* Navbar */
 .main__nav {
   position: fixed;
@@ -149,16 +138,6 @@ body::before {
   position: relative;
   font-weight: 500;
 }
-.p__greet::after {
-  content: "";
-  background: url("/images/shape-1.svg");
-  background-repeat: no-repeat;
-  width: 6rem;
-  height: 6rem;
-  position: absolute;
-  top: -2.2rem;
-  right: -5rem;
-}
 .p__greet-box {
   display: flex;
   flex-direction: column;
@@ -175,22 +154,12 @@ body::before {
   font-weight: 500;
   position: relative;
 }
-.h__greet-2::after {
-  content: "";
-  background: url("/images/shape-2.svg");
-  background-repeat: no-repeat;
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  top: 60%;
-  left: -5rem;
-  transform: rotate(-15deg);
-}
+
 .h__greet span {
   color: var(--primary-color);
 }
 .hire-me {
-  margin-top: 14rem;
+  margin-top: 9rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -576,4 +545,137 @@ body::before {
 
 .service-reach:hover::before {
   width: 100%;
+}
+
+.resume-card {
+  padding: 3rem;
+  margin: 2rem auto;
+  width: 75%;
+  position: relative;
+}
+
+.resume-card-item {
+  position: relative;
+  padding: 2rem;
+}
+
+.resume-card-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.resume-card-item p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.resume-left-card {
+  width: 50%;
+  left: 0;
+}
+.resume-right-card {
+  display: block;
+  width: 50%;
+  left: 50%;
+}
+.resume-timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 80%;
+  margin-top: 5rem;
+  background-color: var(--primary-color);
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+.edu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.1rem;
+}
+.edu-desc {
+  font-size: 1rem !important;
+  margin-bottom: 0.7rem;
+}
+.edu-header {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  font-weight: 500;
+}
+
+.edu-header abbr {
+  text-decoration: none;
+}
+.right-resume-circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  left: -1.7%;
+  z-index: 2;
+  top: 2rem;
+}
+.left-resume-circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  position: absolute;
+  right: -1.7%;
+  z-index: 2;
+  top: 2rem;
+}
+.download-resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download-resume a {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 40rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  justify-content: space-around;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.download-resume a::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50rem;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: all 0.2s linear;
+}
+.download-resume a:hover {
+  color: var(--white);
+  width: max-content;
+}
+.download-resume a:hover::before {
+  width: 100%;
+}
+.download-icon {
+  position: relative;
+  top: -40px;
+  right: 0;
+  width: 0.5rem;
+  height: 1.2rem;
+  transition: all 0.2s linear;
+  margin-right: 1.2rem;
+}
+.download-resume a:hover .download-icon {
+  top: -5px;
+  fill: white;
 }
