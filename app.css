@@ -32,7 +32,6 @@ html {
 
 body {
   font-family: var(--fpoppins);
-  padding: 1.5rem 8rem;
   transition: all 0.2s;
   position: relative;
   line-height: 1.7;
@@ -678,4 +677,133 @@ img {
 .download-resume a:hover .download-icon {
   top: -5px;
   fill: white;
+}
+
+.contact__sections {
+  width: 100%;
+  display: flex;
+}
+
+.contact__details {
+  flex-basis: 50%;
+}
+.contact__details a {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+form {
+  flex-basis: 50%;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column; /* stack label and input */
+  align-items: flex-start; /* align to the left */
+  margin-bottom: 2rem;
+  gap: 0.5rem; /* small space between label and input */
+}
+
+.input__group label {
+  font-size: 1.4rem;
+}
+
+.input__group input,
+.input__group textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--glass-dark);
+  padding: 1rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+.input__group textarea {
+  width: 100%;
+  min-height: 3em; /* minimum 5 rows */
+  max-height: 15em; /* after this, scrolling kicks in */
+  resize: none; /* prevent manual resize if you like */
+  overflow-y: auto; /* scroll only when max-height is reached */
+  font-size: 1.4rem;
+}
+
+.details__group {
+  margin-bottom: 2rem;
+}
+
+.details__group p {
+  margin-bottom: 1rem;
+}
+
+.details_icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.form__btn {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form__btn button {
+  padding: 1rem 4rem;
+  border-radius: 50rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form__btn button::before {
+  content: " ";
+  position: absolute;
+  border-radius: 50rem;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+.form__btn button:hover {
+  color: var(--white);
+}
+
+.form__btn button:hover .send-icon {
+  left: 0;
+}
+
+.form__btn button:hover::before {
+  width: 100%;
+}
+
+.send-icon {
+  position: relative;
+  left: -180%;
+  transition: all 0.2s linear;
+  fill: var(--white);
+}
+
+footer {
+  background-color: var(--primary-color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem 6rem 0;
+}
+.copyright {
+  color: var(--white);
+  font-size: 1.4rem;
 }
