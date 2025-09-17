@@ -1,7 +1,7 @@
 @media screen and (max-width: 40em) {
   body {
     overflow-x: hidden;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
   }
 
   .main__nav {
@@ -101,7 +101,7 @@
   }
 
   .scroll-down {
-    margin-top: 20rem;
+    margin-top: 14rem;
   }
 
   .h__greet,
