@@ -693,7 +693,6 @@ img {
 }
 
 form {
-  max-width: 100%;
   flex-basis: 50%;
 }
 
@@ -711,17 +710,18 @@ form {
 
 .input__group input,
 .input__group textarea {
+  font-size: 16px;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--glass-dark);
   padding: 1rem;
-  max-width: 100%;
+  width: 100%;
   font-family: inherit;
   border-radius: 0;
+  display: block;
 }
 
 .input__group textarea {
-  width: 100%;
   min-height: 3em; /* minimum 5 rows */
   max-height: 15em; /* after this, scrolling kicks in */
   resize: none; /* prevent manual resize if you like */
