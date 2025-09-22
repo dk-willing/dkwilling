@@ -8,38 +8,6 @@ const allMobileNavItems = document.querySelectorAll(".mobile-nav-item");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-item a");
 const getServices = document.querySelectorAll(".service--1");
 
-// myProjectContainer.forEach((el, idx) => {
-//   el.classList.add(idx % 2 === 0 ? "left-container" : "right-container");
-// });
-
-// myProjectTextBox.forEach((el, idx) => {
-//   const span = document.createElement("span");
-//   span.classList.add(
-//     idx % 2 === 0 ? "left-container-arrow" : "right-container-arrow"
-//   );
-//   el.appendChild(span);
-// });
-
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
-  speed: 800,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: false,
-  },
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  freeMode: {
-    enabled: true,
-    momentum: false,
-  },
-  pagination: false,
-  navigation: false,
-  scrollbar: false,
-});
-
 function clearActive() {
   navLinks.forEach((link) => link.classList.remove("active"));
 }

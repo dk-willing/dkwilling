@@ -1,0 +1,38 @@
+.hero__animate_greet {
+  opacity: 1;
+  animation: fadeInAndEnlarge 0.7s linear;
+  transition: all 0.2s linear;
+}
+
+@keyframes fadeInAndEnlarge {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Navbar */
+.navbar_animate {
+  animation: moveDown 0.3s linear;
+  opacity: 1;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -55,8 +55,14 @@
     <!-- Media Queries -->
     <link rel="stylesheet" href="queries.css" />
 
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="animations.css" />
+
     <!-- SCRIPT -->
     <script src="script.js" defer></script>
+
+    <!-- Animations Script -->
+    <script src="animations.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -64,7 +70,7 @@
     <!-- Background -->
 
     <div class="main__nav">
-      <nav class="navbar">
+      <nav class="navbar navbar_animate">
         <div class="navbar__left-side">
           <ul>
             <li class="navbar-item">
@@ -225,49 +231,101 @@
         </div>
         <div class="swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <div class="swiper-slide html">
-              <i class="fa-brands fa-html5"></i>
-              <span>HTML</span>
+          <div class="skill-carousel">
+            <div class="carousel-group">
+              <div class="html">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="css">
+                <i class="fa-brands fa-css3-alt"></i>
+                CSS
+              </div>
+              <div class="js"><i class="fa-brands fa-js"></i>JavaScript</div>
+              <div class="tailwindcss">
+                <box-icon
+                  name="tailwind-css"
+                  type="logo"
+                  color="#5353ed"
+                ></box-icon
+                >TailwindCSS
+              </div>
+              <div class="bootstrap">
+                <box-icon
+                  name="bootstrap"
+                  type="logo"
+                  color="#ed539c"
+                ></box-icon
+                >BOOTSTRAP
+              </div>
+              <div class="py">
+                <box-icon name="python" type="logo" color="#5364ed"></box-icon>
+                PYTHON
+              </div>
+              <div class="git">
+                <box-icon name="github" type="logo" color="#fb5a10"></box-icon
+                >GIT & GITHUB
+              </div>
+              <div class="figma">
+                <box-icon name="figma" type="logo" color="#fb1042"></box-icon
+                >FIGMA
+              </div>
+              <div class="react">
+                <box-icon name="react" type="logo" color="#6369ff"></box-icon
+                >REACT
+              </div>
+              <div class="chrome">
+                <box-icon name="chrome" type="logo" color="#8f8104"></box-icon
+                >DEVTOOLS
+              </div>
             </div>
-            <div class="swiper-slide css">
-              <i class="fa-brands fa-css3-alt"></i>
-              CSS
-            </div>
-            <div class="swiper-slide js">
-              <i class="fa-brands fa-js"></i>JavaScript
-            </div>
-            <div class="swiper-slide tailwindcss">
-              <box-icon
-                name="tailwind-css"
-                type="logo"
-                color="#5353ed"
-              ></box-icon
-              >TailwindCSS
-            </div>
-            <div class="swiper-slide bootstrap">
-              <box-icon name="bootstrap" type="logo" color="#ed539c"></box-icon
-              >BOOTSTRAP
-            </div>
-            <div class="swiper-slide py">
-              <box-icon name="python" type="logo" color="#5364ed"></box-icon>
-              PYTHON
-            </div>
-            <div class="swiper-slide git">
-              <box-icon name="github" type="logo" color="#fb5a10"></box-icon>GIT
-              & GITHUB
-            </div>
-            <div class="swiper-slide figma">
-              <box-icon name="figma" type="logo" color="#fb1042"></box-icon
-              >FIGMA
-            </div>
-            <div class="swiper-slide react">
-              <box-icon name="react" type="logo" color="#6369ff"></box-icon
-              >REACT
-            </div>
-            <div class="swiper-slide chrome">
-              <box-icon name="chrome" type="logo" color="#8f8104"></box-icon
-              >DEVTOOLS
+
+            <div aria-hidden="true" class="carousel-group">
+              <div class="html">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="css">
+                <i class="fa-brands fa-css3-alt"></i>
+                CSS
+              </div>
+              <div class="js"><i class="fa-brands fa-js"></i>JavaScript</div>
+              <div class="tailwindcss">
+                <box-icon
+                  name="tailwind-css"
+                  type="logo"
+                  color="#5353ed"
+                ></box-icon
+                >TailwindCSS
+              </div>
+              <div class="bootstrap">
+                <box-icon
+                  name="bootstrap"
+                  type="logo"
+                  color="#ed539c"
+                ></box-icon
+                >BOOTSTRAP
+              </div>
+              <div class="py">
+                <box-icon name="python" type="logo" color="#5364ed"></box-icon>
+                PYTHON
+              </div>
+              <div class="git">
+                <box-icon name="github" type="logo" color="#fb5a10"></box-icon
+                >GIT & GITHUB
+              </div>
+              <div class="figma">
+                <box-icon name="figma" type="logo" color="#fb1042"></box-icon
+                >FIGMA
+              </div>
+              <div class="react">
+                <box-icon name="react" type="logo" color="#6369ff"></box-icon
+                >REACT
+              </div>
+              <div class="chrome">
+                <box-icon name="chrome" type="logo" color="#8f8104"></box-icon
+                >DEVTOOLS
+              </div>
             </div>
           </div>
         </div>

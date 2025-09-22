@@ -76,6 +76,8 @@ img {
   background: var(--black);
   padding: 1rem 1rem;
   border-radius: 50rem;
+  opacity: 0;
+  transition: all 0.2s linear;
 }
 
 .mobile-nav,
@@ -142,6 +144,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: all 0.2s linear;
 }
 .h__greet {
   margin-top: 2rem;
@@ -162,6 +166,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: all 0.2s linear;
 }
 .hire__btn {
   color: #171717;
@@ -255,44 +261,58 @@ img {
 }
 
 /* Swiper JS */
-.swiper {
+.skill-carousel {
   width: 100%;
-  height: 40px;
-  -webkit-mask-image: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.3) 85%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
+  margin: 2rem auto;
+  display: flex;
+  padding: 2rem;
+  overflow-x: auto;
 
   mask-image: radial-gradient(
     circle,
     rgba(0, 0, 0, 1) 85%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(0, 0, 0 0) 100%
   );
+
   mask-repeat: no-repeat;
   mask-size: cover;
-
   mask-position: center;
 }
-.swiper-slide {
-  width: 200px !important; /* allows multiple slides on screen */
-  flex-shrink: 0; /* prevent shrinking */
+
+.skill-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-group {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 10px 20px; /* space inside slides */
-  border-radius: 6px;
+  align-items: center;
+  gap: 2rem;
+
+  animation: spin 20s infinite linear;
 }
-.swiper-wrapper {
-  transition-timing-function: linear !important; /* makes it constant speed */
-}
-.swiper-slide {
+
+.carousel-group div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 1.2rem 5rem;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-  font-size: 1.6rem;
-  font-weight: 600;
+  gap: 1rem;
+  font-size: 2rem;
+  width: max-content;
 }
+
+/* Carousel Animation */
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
 .html {
   color: #0462b5;
 }
